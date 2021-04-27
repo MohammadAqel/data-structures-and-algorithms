@@ -43,7 +43,7 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
-  let poweArr2=arr.filter(str=>{return!(str==='run'|| str==='apple'||str==='mango'||str === 'orange');});
+  let poweArr2 = arr.filter(str => {return !(str === 'ran' || str === 'banana' || str === 'bob' || str === 'xyz');});
   return poweArr2;
 };
 
