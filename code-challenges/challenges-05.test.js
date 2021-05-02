@@ -148,16 +148,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
-  let arrStr = str.split(' ');
-  let x = arrStr.length - 1;
-  let reverse = [];
-  arrStr.reduce((strTemp) => {
-    strTemp.push(arrStr[x]);
-    x--;
-    return strTemp;
-  }, reverse);
-
-  return reverse.join('');
+  const stringsArr = str.split('');
+  const newStringsArr = stringsArr.reduce((acc, value) =>{
+    return (value + acc);
+  });
+  return newStringsArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
